@@ -1,0 +1,74 @@
+{
+  "name": "rule-editor",
+  "author": "johnson",
+  "license": "MIT",
+  "version": "0.9.76",
+  "description": "rich text editor by canvas/svg",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "typings": "./dist/src/editor/index.d.ts",
+  "main": "./dist/rule-editor.umd.js",
+  "module": "./dist/rule-editor.es.js",
+  "homepage": "https://github.com/zhao-core/rule-editor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhao-core/rule-editor.git"
+  },
+  "keywords": [
+    "rule-editor",
+    "editor",
+    "wysiwyg",
+    "emr"
+  ],
+  "engines": {
+    "node": ">=18.9.1"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "lib": "npm run lint && tsc && vite build --mode lib",
+    "build": "npm run lint && tsc && vite build --mode app",
+    "serve": "vite preview",
+    "lint": "eslint .",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "type:check": "tsc --noEmit",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "postinstall": "simple-git-hooks",
+    "release": "node scripts/release.js"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.0.1",
+    "@types/node": "^18.0.0",
+    "@types/prismjs": "^1.26.0",
+    "@typescript-eslint/eslint-plugin": "5.62.0",
+    "@typescript-eslint/parser": "5.62.0",
+    "cypress": "13.6.0",
+    "cypress-file-upload": "^5.0.8",
+    "eslint": "7.32.0",
+    "simple-git-hooks": "^2.8.1",
+    "typescript": "5.4.5",
+    "vite": "^5.0.0",
+    "vite-plugin-css-injected-by-js": "^2.1.1",
+    "vitepress": "1.1.4",
+    "vue": "^3.4.27"
+  },
+  "dependencies": {
+    "prismjs": "^1.29.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npm run lint && npm run type:check",
+    "commit-msg": "node scripts/verifyCommit.js"
+  }
+}
