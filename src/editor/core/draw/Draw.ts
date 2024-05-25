@@ -1214,7 +1214,6 @@ export class Draw {
       } else if (element.type === ElementType.TABLE) {
         const tdPaddingWidth = tdPadding[1] + tdPadding[3]
         const tdPaddingHeight = tdPadding[0] + tdPadding[2]
-        // 表格分页处理进度：https://github.com/Hufe921/rule-editor/issues/41
         // 查看后续表格是否属于同一个源表格-存在即合并
         if (element.pagingId) {
           let tableIndex = i + 1

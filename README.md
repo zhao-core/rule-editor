@@ -1,11 +1,10 @@
-<h1 align="center">rule-editor</h1>
+<h1 align="center">rule-editor(未完成)</h1>
 
-<p align="center"> a rich text editor by canvas/svg</p>
+<p align="center"> a rule editor by canvas/svg</p>
 
 ## tips
 
-1. [docs](https://hufe.club/rule-editor-docs/)
-2. [rule-editor-plugin](https://github.com/zhao-core/rule-editor-plugin)
+用自然语言编辑规则的编辑器,最终保存成 AST 语法树;(未完成)
 
 ## usage
 
@@ -31,14 +30,9 @@ new Editor(document.querySelector('.rule-editor'), {
 
 ## next features
 
-1. table paging
-2. improve performance
-3. control rules
-4. [CRDT](https://github.com/Hufe921/rule-editor/tree/feature/CRDT)
-
 ## snapshot
 
-![image](./src/assets/snapshots/main_v0.9.35.png)
+![image](./src/assets/snapshots/May-25-2024 08-41-32.gif)
 
 ## install
 
@@ -57,3 +51,10 @@ new Editor(document.querySelector('.rule-editor'), {
 #### lib
 
 `npm run lib`
+
+## 已实现feature
+
+1. 输入文本, 关键字下拉框选择
+2. 单选/多选
+3. 日期的选择
+4. 颜色标注

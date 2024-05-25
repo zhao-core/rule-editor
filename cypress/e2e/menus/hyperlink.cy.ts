@@ -8,7 +8,7 @@ describe('菜单-超链接', () => {
   })
 
   const text = 'rule-editor'
-  const url = 'https://hufe.club/rule-editor'
+  const url = 'https://github.com/zhao-core/rule-editor'
 
   it('超链接', () => {
     cy.getEditor().then((editor: Editor) => {

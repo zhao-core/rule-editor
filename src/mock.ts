@@ -36,7 +36,7 @@ const colorIndex: number[] = colorText
   .flat()
 
 // 模拟高亮字
-const highlightText = ['血细胞比容']
+const highlightText = ['车型']
 const highlightIndex: number[] = highlightText
   .map(b => {
     const i = text.indexOf(b)
@@ -169,7 +169,7 @@ elementList.splice(116, 0, {
 //   listType: ListType.OL,
 //   valueList: [
 //     {
-//       value: '高血压\n糖尿病\n病毒性感冒\n过敏性鼻炎\n过敏性鼻息肉'
+//       value: '团车\n营业车\n农用车\nlala\nbala'
 //     }
 //   ]
 // })
@@ -181,7 +181,7 @@ elementList.splice(116, 0, {
 //   valueList: [
 //     {
 //       value:
-//         '超声引导下甲状腺细针穿刺术；\n乙型肝炎表面抗体测定；\n膜式病变细胞采集术、后颈皮下肤层；'
+//         'AAAA;\nCCC；\nDDD；'
 //     }
 //   ]
 // })
@@ -444,10 +444,10 @@ export const commentList: IComment[] = [
   // {
   //   id: '1',
   //   content:
-  //     '红细胞比容（HCT）是指每单位容积中红细胞所占全血容积的比值，用于反映红细胞和血浆的比例。',
-  //   userName: 'Hufe',
-  //   rangeText: '血细胞比容',
-  //   createdDate: '2023-08-20 23:10:55'
+  //     '23',
+  //   userName: 'zhao',
+  //   rangeText: '比容',
+  //   createdDate: '2024-08-20 23:10:55'
   // }
 ]
 
