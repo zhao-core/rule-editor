@@ -1,4 +1,4 @@
-<h1 align="center">rule-editor(未完成)</h1>
+<h1 align="center">rule-editor</h1>
 
 <p align="center"> a rule editor by canvas/svg</p>
 
