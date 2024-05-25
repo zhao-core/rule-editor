@@ -32,7 +32,7 @@ new Editor(document.querySelector('.rule-editor'), {
 
 ## snapshot
 
-![image](./src/assets/snapshots/May-25-2024 08-41-32.gif)
+![image](./src/assets/snapshots/May-25-2024%2008-41-32.gif)
 
 ## install
 
