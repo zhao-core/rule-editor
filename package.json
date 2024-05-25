@@ -1,9 +1,9 @@
 {
   "name": "rule-editor",
   "author": "johnson",
-  "license": "MIT",
-  "version": "0.9.76",
-  "description": "rich text editor by canvas/svg",
+  "license": "GPL",
+  "version": "0.1.1",
+  "description": "rich rules editor by canvas/svg",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
